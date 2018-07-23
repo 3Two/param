@@ -48,7 +48,7 @@ DustSimulation:
   output folder: .
   random seed: 42
 RadiationHydrodynamicsSimulation:
-  maximum timestep: 1e6 s
+  maximum timestep: 5e6 s
   minimum timestep: -1 s
   number of iterations: 1000 
   number of photons: 500000 
