@@ -1,0 +1,70 @@
+CCDImage:
+  anchor x: -12.1 kpc
+  anchor y: -12.1 kpc
+  filename: test_dustsimulation_output
+  image height: 200
+  image width: 200
+  sides x: 24.2 kpc
+  sides y: 24.2 kpc
+  type: BinaryArray
+  view phi: 0 degrees
+  view theta: 89.7 degrees
+ContinuousPhotonSource:
+  bulge over total ratio: 0.2
+  scale height stars: 0.6 kpc
+  scale length stars: 5. kpc
+DensityFunction:
+  neutral fraction H: 1
+  scale height ISM: 0.000022 kpc
+  central density: 1. cm^-3
+  albedo: 0.
+  density: 0 m^-3 
+  dustdensity: 1.67e-19 
+  gval: 0.9 
+  opacity: 1e20
+  scale length ISM: 0.0006 kpc
+  type: Homogeneous
+  temperature: 10 K 
+
+DensityGrid:
+  number of cells: [26, 26, 26]
+  periodicity: [false, false, false]
+SimulationBox:
+  anchor: [-1e15 m, -1e15 m, -1e15 m]
+  sides: [2e15 m, 2e15 m, 2e15 m]
+dust:
+  band: V
+PhotonSourceDistribution:
+  luminosity: 5.777e+59 Hz 
+  type: SingleStar
+PhotonSourceSpectrum:
+  type: Monochromatic
+DensityGridWriter:
+  type: AsciiFile
+hydro:
+  active: false
+DustSimulation:
+  number of photons: 500000.
+  output folder: .
+  random seed: 42
+RadiationHydrodynamicsSimulation:
+  maximum timestep: 1e6 s
+  minimum timestep: -1 s
+  number of iterations: 1000 
+  number of photons: 500000 
+  number of photons first loop: 500000 
+  output folder: . 
+  radiation time: -1 s 
+  random seed: 42 
+  snapshot time: -1 yr
+  total time: 80 yr
+  use mask: false 
+  use potential: false 
+HydroIntegrator:
+  radiation pressure: true 
+  radiative cooling: false 
+  radiative heating: false 
+  polytropic index: 1.
+
+
+
