@@ -16,7 +16,7 @@ ContinuousPhotonSource:
 DensityFunction:
   neutral fraction H: 1
   scale height ISM: 0.000022 kpc
-  central density: 1. cm^-3
+  
   albedo: 0.
   density: 0 m^-3 
   dustdensity: 1.67e-19 
@@ -30,8 +30,8 @@ DensityGrid:
   number of cells: [26, 26, 26]
   periodicity: [false, false, false]
 SimulationBox:
-  anchor: [-1e15 m, -1e15 m, -1e15 m]
-  sides: [2e15 m, 2e15 m, 2e15 m]
+  anchor: [-2e14 m, -2e14 m, -2e14 m]
+  sides: [4e14 m, 4e14 m, 4e14 m]
 dust:
   band: V
 PhotonSourceDistribution:
@@ -48,7 +48,7 @@ DustSimulation:
   output folder: .
   random seed: 42
 RadiationHydrodynamicsSimulation:
-  maximum timestep: 5e6 s
+  maximum timestep: 2e6 s
   minimum timestep: -1 s
   number of iterations: 1000 
   number of photons: 500000 
@@ -56,8 +56,8 @@ RadiationHydrodynamicsSimulation:
   output folder: . 
   radiation time: -1 s 
   random seed: 42 
-  snapshot time: -1 yr
-  total time: 80 yr
+  snapshot time: 100 yr
+  total time: 1000 yr
   use mask: false 
   use potential: false 
 HydroIntegrator:
